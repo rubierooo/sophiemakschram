@@ -5,15 +5,13 @@ path: home
 ---
 
 <div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-      {{title}}
-  </h1>
   <div class="content">
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing. hi hi
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+    <h1>
+        {{title}}
+    </h1>
+    <p>
+      is an ___
+    </p>
+      {% include "./_includes/partials/content.html" %}
   </div>
-  {% include "./_includes/partials/content.html" %}
 </div>
