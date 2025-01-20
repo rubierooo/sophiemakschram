@@ -38,6 +38,11 @@ module.exports = function (eleventyConfig) {
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
+  // Copy CSS to root
+  eleventyConfig.addPassthroughCopy("./src/bundle.css");
+  eleventyConfig.addPassthroughCopy("./src/bg.jpg");
+  eleventyConfig.addPassthroughCopy("./src/jquery.ripples.js");
+
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
