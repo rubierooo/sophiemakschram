@@ -11,6 +11,4 @@ tags:
 
 this is a pproject project page
 
-
-
 ![](/static/img/09.24_sopfhe_rubie-3.png)
