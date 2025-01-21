@@ -10,7 +10,7 @@ body {
     overflow: hidden;
     background-image: url("bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 70% 50%;
 }
 
 .content {
@@ -21,6 +21,9 @@ body {
 
 .buttonbar {
   height: 2em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .disable {
