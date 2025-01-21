@@ -1,0 +1,11 @@
+<div>
+        {% for project in collections.project %}
+            <a href="
+            {% if project.data.url %}
+                {{ project.data.url }}
+            {% else %}
+              {{ project.url | url }}
+            {% endif %}
+            ">{{project.data.title}}</a>
+        {% endfor %}
+</div>
