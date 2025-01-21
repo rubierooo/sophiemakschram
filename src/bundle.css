@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  overflow-y: auto;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
     background-attachment: fixed;
     background-position: 70% 50%;
     position: relative;
+    display: flex; /* Or grid, if you're using grid layout */
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body always covers the viewport height */
 }
 
 body canvas {
@@ -33,7 +37,7 @@ body canvas {
 .buttonbar {
   height: 2em;
   position: fixed;
-  bottom: 2em;
+  bottom: 0;
   width: 100%;
 }
 
