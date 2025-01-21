@@ -21,7 +21,7 @@ body canvas {
   left: 0;
   width: 100% !important;
   height: 100% !important;
-  z-index: -1; /* Ensure it stays behind your content  /*
+  z-index: -1; /* Ensure it stays behind your content  */
 }
 
 .content {
@@ -33,7 +33,7 @@ body canvas {
 .buttonbar {
   height: 2em;
   position: fixed;
-  bottom: 0;
+  bottom: 2em;
   width: 100%;
 }
 
