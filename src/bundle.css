@@ -47,7 +47,7 @@ font-family: "Fraunces", serif;
  border-radius: 5px;
  background-color: rgba(0,0,0,0);
  border: none;
- color: #c5dbd8;
+ color: #d1e8da;
  text-align: center;
  text-decoration: none;
  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), -2px 2px 1px rgba(0, 0, 0, 0.3), 2px -2px 1px rgba(0, 0, 0, 0.3), -2px -2px 1px rgba(0, 0, 0, 0.3), 2px 0px 1px rgba(0, 0, 0, 0.3), -2px 0px 1px rgba(0, 0, 0, 0.3), 0px -2px 1px rgba(0, 0, 0, 0.3), 0px 2px 1px rgba(0, 0, 0, 0.3);
@@ -57,11 +57,11 @@ font-family: "Fraunces", serif;
 .disable:hover {
  color: black;
  text-shadow: none;
- background-color: #c5dbd8;
+ background-color: #d1e8da;
 }
 
 h1 {
-  text-shadow: 2px 2px 1px #c5dbd8, -2px 2px 1px #c5dbd8, 2px -2px 1px #c5dbd8, -2px -2px 1px #c5dbd8, 2px 0px 1px #c5dbd8, -2px 0px 1px #c5dbd8, 0px 2px 1px #c5dbd8, 0px -2px 1px #c5dbd8;
+  text-shadow: 2px 2px 1px #d1e8da, -2px 2px 1px #d1e8da, 2px -2px 1px #d1e8da, -2px -2px 1px #d1e8da, 2px 0px 1px #d1e8da, -2px 0px 1px #d1e8da, 0px 2px 1px #d1e8da, 0px -2px 1px #d1e8da;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -88,13 +88,14 @@ img {
 }
 
 a {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   text-decoration: none;
-  color: #c5dbd8;
+  color: #d1e8da;
 }
 
 a:hover {
   color: black;
-  background-color: #c5dbd8;
+  background-color: #d1e8da;
   text-shadow: none;
 }
 
@@ -117,7 +118,7 @@ a:hover {
 }
 
 span.sub {
-  background-color: #c5dbd8;
+  background-color: #d1e8da;
 }
 
 a.sub {
