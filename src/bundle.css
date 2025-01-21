@@ -7,7 +7,8 @@ html, body {
 }
 
 body {
-    font-family: "Fraunces", serif;
+    font-family: "Lexend", "Arial", sans-serif;
+    color: black;
     background-image: url("bg.jpg");
     background-size: cover;
     background-attachment: scroll;
@@ -16,6 +17,7 @@ body {
     display: flex; /* Or grid, if you're using grid layout */
     flex-direction: column;
     min-height: 100vh; /* Ensures the body always covers the viewport height */
+    line-height: 1.3em;
 }
 
 body canvas {
@@ -28,12 +30,17 @@ body canvas {
 }
 
 .content {
-  margin-top: 0;
-  margin-right: 2em;
+  margin-top: 1em;
+  margin-bottom: auto;
+  margin-right: 0em;
+  padding-right: 1em;
+  padding-bottom: 1em;
   margin-left: auto;
   text-align: right;
   width: 95%;
-  max-width: 50em;
+  max-width: 30em;
+  background-color: ;
+  border-radius: 10px;
 }
 
 .buttonbar {
@@ -44,12 +51,11 @@ body canvas {
 }
 
 .disable {
-font-family: "Fraunces", serif;
  float: left;
  border-radius: 5px;
  background-color: rgba(0,0,0,0);
  border: none;
- color: #d1e8da;
+ color: #fbffd6;
  text-align: center;
  text-decoration: none;
  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), -2px 2px 1px rgba(0, 0, 0, 0.3), 2px -2px 1px rgba(0, 0, 0, 0.3), -2px -2px 1px rgba(0, 0, 0, 0.3), 2px 0px 1px rgba(0, 0, 0, 0.3), -2px 0px 1px rgba(0, 0, 0, 0.3), 0px -2px 1px rgba(0, 0, 0, 0.3), 0px 2px 1px rgba(0, 0, 0, 0.3);
@@ -59,41 +65,41 @@ font-family: "Fraunces", serif;
 .disable:hover {
  color: black;
  text-shadow: none;
- background-color: #d1e8da;
+ background-color: #fbffd6;
 }
 
 h1 {
-  text-shadow: 2px 2px 1px #d1e8da, -2px 2px 1px #d1e8da, 2px -2px 1px #d1e8da, -2px -2px 1px #d1e8da, 2px 0px 1px #d1e8da, -2px 0px 1px #d1e8da, 0px 2px 1px #d1e8da, 0px -2px 1px #d1e8da;
+  text-shadow: 2px 2px 1px #fbffd6, -2px 2px 1px #fbffd6, 2px -2px 1px #fbffd6, -2px -2px 1px #fbffd6, 2px 0px 1px #fbffd6, -2px 0px 1px #fbffd6, 0px 2px 1px #fbffd6, 0px -2px 1px #fbffd6;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 h2 {
-  margin-bottom: 0;
+  text-shadow: 1px 1px 2px #fbffd6, -1px 1px 1px #fbffd6, 1px -1px 2px #fbffd6, -1px -1px 1px #fbffd6, 1px 0px 2px #fbffd6, -1px 0px 1px #fbffd6, 0px 1px 2px #fbffd6, 0px -1px 1px #fbffd6;
+  margin-bottom: 0.2em;
   padding-bottom: 0;
+  font-size: 1.4em;
 }
 
 img {
-  width: 50%;
+  width: 100%;
   min-width: 300px;
   height: auto;
 }
 
-@media only screen and (max-width: 768px) {
-  img {
-    width: 100%;
-  }
-}
-
 a {
-  text-shadow: 0px 0px 20px rgba(0,0,0,0.8);
-  text-decoration: none;
-  color: #d1e8da;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-style: dotted;
+  color: black;
 }
 
 a:hover {
   color: black;
-  background-color: #d1e8da;
+  background-color: yellow;
   text-shadow: none;
 }
 
@@ -116,11 +122,11 @@ a:hover {
 }
 
 span.sub {
-  background-color: #d1e8da;
+  background-color: #fbffd6;
 }
 
 a.sub {
   margin-left: 0.3em;
   margin-right: 0.3em;
-  white-space: nowrap;
+  #fbffd6-space: nowrap;
 }

@@ -7,10 +7,11 @@ path: home
         {{title}}
     </h1>
     <p>
-      {{ settings.bio }}
+      <span>{{ settings.bio }}</span>
     </p>
     <p>
       <a href="mailto:{{ settings.email }}">email Sophie</a>
     </p>
+
     <h2>projects:</h2>
       {% include "./_includes/partials/projectslist.html" %}

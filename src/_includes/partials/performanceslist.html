@@ -1,7 +1,7 @@
 <div>
-  {% for year, projects in collections.projectsByYear %}
+  {% for year, performances in collections.peformancesByYear %}
     <span>{{ year }}</span>
-    {% for project in projects %}
+    {% for project in performances %}
         &bull;
         <a href="
         {% if project.data.url %}

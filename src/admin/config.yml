@@ -24,6 +24,42 @@ collections:
           - { label: "Year", name: "year", widget: "number" }
           - { label: "Optional URL", name: "url", widget: "string", required: false, hint: "put a url here if you want the homepage link to be an external site instead of to a page on this site"}
           - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Performances"
+    name: "performances"
+    folder: "src/performances"
+    create: true
+    editor:
+      preview: false
+    fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Year", name: "year", widget: "number" }
+          - { label: "Optional URL", name: "url", widget: "string", required: false, hint: "put a url here if you want the homepage link to be an external site instead of to a page on this site"}
+          - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Writing"
+    name: "writing"
+    folder: "src/writing"
+    create: true
+    editor:
+      preview: false
+    fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Year", name: "year", widget: "number" }
+          - { label: "Optional URL", name: "url", widget: "string", required: false, hint: "put a url here if you want the homepage link to be an external site instead of to a page on this site"}
+          - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Workshops & Talks"
+    name: "workshops"
+    folder: "src/workshops"
+    create: true
+    editor:
+      preview: false
+    fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Year", name: "year", widget: "number" }
+          - { label: "Optional URL", name: "url", widget: "string", required: false, hint: "put a url here if you want the homepage link to be an external site instead of to a page on this site"}
+          - { label: "Body", name: "body", widget: "markdown" }
   - label: "Homepage Settings"
     name: "settings"
     editor:

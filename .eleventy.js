@@ -59,20 +59,63 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
-  eleventyConfig.addCollection("projectsByYear", function(collectionApi) {
-      const projects = collectionApi.getFilteredByGlob("./src/projects/*.md");
 
-      // Group projects by the "year" field
-      const projectsByYear = projects.reduce((acc, project) => {
-        const year = project.data.year;  // Use the "year" field from the front matter
-        acc[year] = acc[year] || [];
-        acc[year].push(project);
-        return acc;
-      }, {});
-      console.log("Projects by Year:", projectsByYear);  // Log the collection
-      // Sort by year in descending order
-      return Object.entries(projectsByYear).sort((a, b) => b[0] - a[0]);
-    });
+  eleventyConfig.addCollection("projectsByYear", function(collectionApi) {
+    const projects = collectionApi.getFilteredByGlob("./src/projects/*.md");
+
+    // Group projects by the "year" field
+    const projectsByYear = projects.reduce((acc, project) => {
+      const year = project.data.year;  // Use the "year" field from the front matter
+      acc[year] = acc[year] || [];
+      acc[year].push(project);
+      return acc;
+    }, {});
+    console.log("Projects by Year:", projectsByYear);  // Log the collection
+    // Sort by year in descending order
+    return Object.entries(projectsByYear).sort((a, b) => b[0] - a[0]);
+  });
+
+  eleventyConfig.addCollection("performancesByYear", function(collectionApi) {
+    const performances = collectionApi.getFilteredByGlob("./src/performances/*.md");
+
+    // Group projects by the "year" field
+    const performancesByYear = performances.reduce((acc, performance) => {
+      const year = performance.data.year;  // Use the "year" field from the front matter
+      acc[year] = acc[year] || [];
+      acc[year].push(performance);
+      return acc;
+    }, {});
+    // Sort by year in descending order
+    return Object.entries(performancesByYear).sort((a, b) => b[0] - a[0]);
+  });
+
+  eleventyConfig.addCollection("writingByYear", function(collectionApi) {
+    const writings = collectionApi.getFilteredByGlob("./src/writing/*.md");
+
+    // Group projects by the "year" field
+    const writingByYear = writings.reduce((acc, writing) => {
+      const year = writings.data.year;  // Use the "year" field from the front matter
+      acc[year] = acc[year] || [];
+      acc[year].push(project);
+      return acc;
+    }, {});
+    // Sort by year in descending order
+    return Object.entries(writingByYear).sort((a, b) => b[0] - a[0]);
+  });
+
+  eleventyConfig.addCollection("workshopsByYear", function(collectionApi) {
+    const workshops = collectionApi.getFilteredByGlob("./src/workshops/*.md");
+
+    // Group projects by the "year" field
+    const workshopsByYear = workshops.reduce((acc, workshop) => {
+      const year = workshop.data.year;  // Use the "year" field from the front matter
+      acc[year] = acc[year] || [];
+      acc[year].push(workshop);
+      return acc;
+    }, {});
+    // Sort by year in descending order
+    return Object.entries(workshopsByYear).sort((a, b) => b[0] - a[0]);
+  });
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
