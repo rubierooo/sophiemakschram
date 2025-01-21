@@ -13,16 +13,16 @@ body {
     background-attachment: fixed;
     background-position: 70% 50%;
 }
-
+/*
 body canvas {
   position: fixed !important;
   top: 0;
   left: 0;
   width: 100% !important;
   height: 100% !important;
-  z-index: -1; /* Ensure it stays behind your content */
+  z-index: -1; /* Ensure it stays behind your content 
 }
-
+*/
 .content {
   margin-top: 0;
   margin-right: 2em;
