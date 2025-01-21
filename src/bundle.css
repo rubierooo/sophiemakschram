@@ -58,7 +58,11 @@ font-family: "Fraunces", serif;
 
 h1 {
   text-shadow: 2px 2px 1px #c5dbd8, -2px 2px 1px #c5dbd8, 2px -2px 1px #c5dbd8, -2px -2px 1px #c5dbd8, 2px 0px 1px #c5dbd8, -2px 0px 1px #c5dbd8, 0px 2px 1px #c5dbd8, 0px -2px 1px #c5dbd8;
+}
 
+img {
+  max-width: 50%;
+  height: auto;
 }
 
 a {
