@@ -1,11 +1,16 @@
 <div>
-        {% for project in collections.project %}
-            <a href="
-            {% if project.data.url %}
-                {{ project.data.url }}
-            {% else %}
-              {{ project.url | url }}
-            {% endif %}
-            ">{{project.data.title}}</a>
-        {% endfor %}
+  {% for year, projects in collections.projectsByYear %}
+    <b>{{ year }}</b>
+    {% for project in projects %}
+        &bull;
+        <a href="
+        {% if project.data.url %}
+            {{ project.data.url }}
+        {% else %}
+          {{ project.url | url }}
+        {% endif %}
+        ">{{project.data.title}}</a>
+    {% endfor %}
+    <br/>
+  {% endfor %}
 </div>

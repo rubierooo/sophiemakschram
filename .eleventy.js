@@ -1,3 +1,5 @@
+console.log("Eleventy config file is running");
+
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -57,7 +59,20 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
+  eleventyConfig.addCollection("projectsByYear", function(collectionApi) {
+      const projects = collectionApi.getFilteredByGlob("./src/projects/*.md");
 
+      // Group projects by the "year" field
+      const projectsByYear = projects.reduce((acc, project) => {
+        const year = project.data.year;  // Use the "year" field from the front matter
+        acc[year] = acc[year] || [];
+        acc[year].push(project);
+        return acc;
+      }, {});
+      console.log("Projects by Year:", projectsByYear);  // Log the collection
+      // Sort by year in descending order
+      return Object.entries(projectsByYear).sort((a, b) => b[0] - a[0]);
+    });
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
