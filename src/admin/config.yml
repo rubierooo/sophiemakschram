@@ -11,11 +11,6 @@ public_folder: "/static/img"
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 # publish_mode: editorial_workflow
-
-# Point Netlify CMS to the custom JavaScript file
-load_config_file: false
-site_url: /
-
 collections:
   - label: "Projects"
     name: "projects"
